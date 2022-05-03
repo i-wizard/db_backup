@@ -12,4 +12,4 @@ class Record(models.Model):
 
 class SubRecord(models.Model):
     record = models.ForeignKey(Record, on_delete=models.SET_NULL, null=True)
-    created_at = models.DateTimeField(auto_now_add=True, null=True)
+    created_at = models.DateTimeField(auto_now_add=True, null=True, blank=True)
